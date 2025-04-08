@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header"; // Erstellen wir gleich
-import Footer from "@/components/Footer"; // Erstellen wir gleich
+import Footer from "@/components/Footer";
 
 // Schriftart konfigurieren
 const inter = Inter({ subsets: ["latin"] });
@@ -30,6 +29,7 @@ export default function RootLayout({
 					{/* Hauptinhalt nimmt verfügbaren Platz ein */}
 					{children}
 				</main>
+				<Footer />
 			</body>
 		</html>
 	);
